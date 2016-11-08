@@ -4,6 +4,6 @@ open FSharp.Interop.Dynamic
 open Newtonsoft.Json
 open Dale.Http
 
-let Notify(req: HttpRequestMessage, log: TraceWriter) =
+let Run(req: HttpRequestMessage, log: TraceWriter) :Task<HttpResponseMessage> =
   log.Info(sprintf "WebHook triggered.")
   return wrappedAuditHandler req |> Async.StartAsTask

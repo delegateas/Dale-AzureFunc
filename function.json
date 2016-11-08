@@ -4,11 +4,13 @@
             "type": "httpTrigger",
             "direction": "in",
             "webHookType": "genericJson",
-            "name": "req"
+            "name": "req",
+            "route" : "hooks/notify"
         },
         {
             "type": "http",
-            "direction": "in"
+            "name" : "res",
+            "direction": "out"
         }
     ]
 }
