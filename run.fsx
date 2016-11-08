@@ -6,4 +6,4 @@ open Dale.Http
 
 let Notify(req: HttpRequestMessage, log: TraceWriter) =
   log.Info(sprintf "WebHook triggered.")
-  return wrappedAuditHandler req
+  return wrappedAuditHandler req |> Async.StartAsTask
