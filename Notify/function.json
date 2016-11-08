@@ -4,8 +4,7 @@
         {
             "type": "httpTrigger",
             "direction": "in",
-            "name": "req",
-            "route" : "hooks/notify"
+            "name": "req"
         },
         {
             "type": "http",
