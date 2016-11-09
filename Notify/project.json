@@ -2,8 +2,7 @@
     "frameworks": {
         "net46": {
             "dependencies": {
-                "FSharp.Data" : "2.3.2.0",
-                "Delegate.AuditLogExporter": "0.0.8"
+                "Delegate.AuditLogExporter": "0.0.9"
             }
         }
     }
