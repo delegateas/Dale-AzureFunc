@@ -2,7 +2,7 @@
     "frameworks": {
         "net46": {
             "dependencies": {
-                "Delegate.AuditLogExporter": "0.0.6"
+                "Delegate.AuditLogExporter": "0.0.7"
             }
         }
     }
