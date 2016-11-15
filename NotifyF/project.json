@@ -1,0 +1,9 @@
+{
+    "frameworks": {
+        "net46": {
+            "dependencies": {
+                "Delegate.AuditLogExporter": "0.0.9"
+            }
+        }
+    }
+}
