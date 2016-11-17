@@ -1,5 +1,3 @@
-using Microsoft.FSharp;
-using Microsoft.FSharp.Core;
 using System.Net;
 using System.Net.Http;
 using Newtonsoft.Json;
