@@ -1,0 +1,10 @@
+{
+  "bindings": [
+    {
+      "type": "queueTrigger",
+      "name": "message",
+      "direction": "in",
+      "queueName": "dale-auditeventqueue"
+    }
+  ]
+}
