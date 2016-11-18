@@ -4,7 +4,8 @@
       "type": "queueTrigger",
       "name": "message",
       "direction": "in",
-      "queueName": "dale-auditeventqueue"
+      "queueName": "dale-auditeventqueue",
+      "connection": "AzureConnectionString" 
     }
   ]
 }
