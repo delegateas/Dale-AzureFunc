@@ -4,6 +4,6 @@ using Dale;
 
 public static void Run(string message, TraceWriter log)
 {
-    log.Info("Processing batch at: {message}");
+    log.Info("Processing batch: {message}");
     Http.doExportWithException(message);
 }
