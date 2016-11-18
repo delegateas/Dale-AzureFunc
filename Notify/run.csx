@@ -3,9 +3,9 @@ using System.Net.Http;
 using Newtonsoft.Json;
 using Dale;
 
-public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log) {
-   log.Info("Received message:");
-   log.Info(req.Content.ReadAsStringAsync().Result);
-   log.Info("EOF");
-   return Middleware.interopHandler(req);
+public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
+{
+    log.Info("Received message:");
+    log.Info(req.Content.ReadAsStringAsync().Result);
+    return Interop.handler(req);
 }
