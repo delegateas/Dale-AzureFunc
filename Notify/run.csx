@@ -15,7 +15,8 @@ public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log) {
        ConfigurationManager.AppSettings["ClientSecret"],
        ConfigurationManager.AppSettings["AzureConnectionString"],
        ConfigurationManager.AppSettings["AzureQueueName"],
-       ConfigurationManager.AppSettings["RedactedFields"]);
+       ConfigurationManager.AppSettings["RedactedFields"],
+       ConfigurationManager.AppSettings["PartiallyRedactedFields"]);
 
    return new Dale.Exporter(conf).Handle(req);
 }

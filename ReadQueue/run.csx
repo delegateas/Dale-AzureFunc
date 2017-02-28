@@ -13,7 +13,8 @@ public static void Run(string message, TraceWriter log)
        ConfigurationManager.AppSettings["ClientSecret"],
        ConfigurationManager.AppSettings["AzureConnectionString"],
        ConfigurationManager.AppSettings["AzureQueueName"],
-       ConfigurationManager.AppSettings["RedactedFields"]);
+       ConfigurationManager.AppSettings["RedactedFields"],
+       ConfigurationManager.AppSettings["PartiallyRedactedFields"]);
 
     var res = new Dale.Exporter(conf).ExportWithException(message);
     foreach(string s in res) {
